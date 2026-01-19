@@ -1,0 +1,222 @@
+Task 1 – Unique numbers
+def all_unique(numbers):
+    return len(numbers) == len(set(numbers))
+
+print(all_unique([1, 2, 3, 4]))
+print(all_unique([1, 2, 2, 4]))
+
+Task 2 – Runner time
+time = float(input("Enter lap time: "))
+
+if time < 50.5:
+    print("Below standard time")
+else:
+    print("Not below standard time")
+
+Task 3 – Reverse order of strings
+strings = []
+
+while True:
+    s = input("Enter string: ")
+    if s == "":
+        break
+    strings.append(s)
+
+for item in reversed(strings):
+    print(item)
+
+Task 4 – Positive, negative or zero
+num = int(input("Enter number: "))
+
+if num > 0:
+    print("Positive")
+elif num < 0:
+    print("Negative")
+else:
+    print("Zero")
+
+Task 5 – Check for "coconut"
+def has_coconut(words):
+    return "coconut" in words
+
+print(has_coconut(["apple", "coconut", "banana"]))
+print(has_coconut(["apple", "banana"]))
+
+Task 6 – Count even numbers
+count = 0
+
+while True:
+    s = input("Enter number: ")
+    if s == "":
+        break
+    num = int(s)
+    if num % 2 == 0:
+        count += 1
+
+print("Even numbers:", count)
+
+Task 7 – Palindrome
+text = input("Enter string: ")
+
+if text == text[::-1]:
+    print("Palindrome")
+else:
+    print("Not a palindrome")
+
+Task 8 – Maximum value
+def find_max(numbers):
+    return max(numbers)
+
+print(find_max([4, 7, 2, 9]))
+
+Task 9 – Divisible by 3 and 7
+num = int(input("Enter number: "))
+
+if num % 3 == 0 and num % 7 == 0:
+    print("Divisible by 3 and 7")
+else:
+    print("Not divisible by 3 and 7")
+
+Task 10 – Count unique strings
+strings = []
+
+while True:
+    s = input("Enter string: ")
+    if s == "":
+        break
+    strings.append(s)
+
+print("Unique strings:", len(set(strings)))
+
+Task 11 – Odd or Even
+num = int(input("Enter number: "))
+
+if num % 2 == 0:
+    print("Even")
+else:
+    print("Odd")
+
+Task 12 – Sorted list
+def is_sorted(numbers):
+    return numbers == sorted(numbers)
+
+print(is_sorted([1, 2, 3]))
+print(is_sorted([3, 2, 1]))
+
+Task 13 – Longest string
+strings = []
+
+while True:
+    s = input("Enter string: ")
+    if s == "":
+        break
+    strings.append(s)
+
+print("Longest string:", max(strings, key=len))
+
+Task 14 – Multiple of 5
+num = int(input("Enter number: "))
+
+if num % 5 == 0:
+    print("Multiple of 5")
+else:
+    print("Not a multiple of 5")
+
+Task 15 – Capital letters
+def all_capital(words):
+    return all(word[0].isupper() for word in words)
+
+print(all_capital(["Hello", "World"]))
+print(all_capital(["Hello", "world"]))
+
+Task 16 – Lowercase & alphabetical
+strings = []
+
+while True:
+    s = input("Enter string: ")
+    if s == "":
+        break
+    strings.append(s.lower())
+
+for item in sorted(strings):
+    print(item)
+
+Task 17 – Count vowels
+text = input("Enter string: ")
+vowels = "aeiouAEIOU"
+
+count = 0
+for ch in text:
+    if ch in vowels:
+        count += 1
+
+print("Vowels:", count)
+
+Task 18 – Between 0 and 100
+def in_range(numbers):
+    return all(0 <= n <= 100 for n in numbers)
+
+print(in_range([10, 50, 100]))
+print(in_range([10, 150]))
+
+Task 19 – Pass or fail
+mark = int(input("Enter mark: "))
+
+if mark >= 40:
+    print("Pass")
+else:
+    print("Fail")
+
+Task 20 – No empty strings
+def no_empty(strings):
+    return "" not in strings
+
+print(no_empty(["apple", "banana"]))
+print(no_empty(["apple", ""]))
+
+Task 21 – Sum of integers
+total = 0
+
+while True:
+    s = input("Enter number: ")
+    if s == "":
+        break
+    total += int(s)
+
+print("Sum:", total)
+
+Task 22 – Palindrome (again)
+text = input("Enter string: ")
+
+if text == text[::-1]:
+    print("Palindrome")
+else:
+    print("Not a palindrome")
+
+Task 23 – Average
+def average(numbers):
+    return sum(numbers) / len(numbers)
+
+print(average([10, 20, 30]))
+
+Task 24 – Average string length
+strings = []
+
+while True:
+    s = input("Enter string: ")
+    if s == "":
+        break
+    strings.append(s)
+
+avg = sum(len(s) for s in strings) / len(strings)
+print("Average length:", avg)
+
+Task 25 – Positive, negative or zero
+num = int(input("Enter number: "))
+
+if num > 0:
+    print("Positive")
+elif num < 0:
+    print("Negative")
+else:
+    print("Zero")
