@@ -1,10 +1,11 @@
-# The
+# Task 1
 
 **Course:** Programming Fundamentals  
 **Student ID/Email:** the@example.com  
 
 I am submitting Exam Paper 2.
 
+# Task 2
 # How I Work Best in Programming
 
 ## Preferred Tools
@@ -54,3 +55,4 @@ strings.sort()
 print("Strings in alphabetical order:")
 for word in strings:
     print(word)
+
